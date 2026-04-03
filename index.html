@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FIBR — Fashion Forward</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <!-- External CSS -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Internal CSS (demonstrating inline + internal + external) -->
+  <style>
+    /* Internal CSS — hero section specific */
+    .hero {
+      background-color: var(--cream);
+      padding: 80px 60px;
+      text-align: center;
+      border-bottom: 2px solid var(--dark);
+    }
+    .hero h1 {
+      font-size: 5rem;
+      letter-spacing: -2px;
+      margin-bottom: 0.2em;
+    }
+    .hero p {
+      font-size: 1.1rem;
+      color: var(--muted);
+      margin-bottom: 2em;
+    }
+    .hero-categories {
+      display: inline-flex;
+      gap: 30px;
+      font-size: 0.85rem;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+    .hero-categories span {
+      position: relative;
+    }
+    .hero-categories span:not(:last-child)::after {
+      content: "–";
+      position: absolute;
+      right: -18px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- header element -->
+  <header class="site-header">
+    <nav class="site-nav">
+      <a href="index.html" class="nav-logo">FIBR</a>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="collection.html">Collection</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- main section -->
+  <main>
+
+    <!-- Hero -->
+    <section class="hero">
+      <h1>WHAT TO WEAR?</h1>
+      <p>Curated looks for every moment — minimal, intentional, yours.</p>
+      <div class="hero-categories">
+        <span>Basic</span>
+        <span>Color</span>
+        <span>Design</span>
+        <span>Silhouette</span>
+        <span>Material</span>
+      </div>
+    </section>
+
+    <!-- Featured looks — float/clear layout (Part B requirement) -->
+    <section class="section featured">
+      <h2>Featured Looks</h2>
+      <p>Our editorial picks this season — structured layers, soft palettes, and effortless proportion.</p>
+
+      <div class="float-layout clearfix">
+        <div class="float-card float-left">
+          <!-- figure + figcaption elements -->
+          <figure>
+            <img src="img/look1.jpg" alt="Oversized blazer with slip dress and leather belt — editorial style">
+            <figcaption>The Soft Structure — Oversized blazer, slip dress, leather belt</figcaption>
+          </figure>
+        </div>
+        <div class="float-card float-left">
+          <figure>
+            <img src="img/look2.jpg" alt="All-black oversized blazer with wide leg trousers and pointed heels">
+            <figcaption>The Dark Column — Charcoal layers, wide-leg trousers, patent heel</figcaption>
+          </figure>
+        </div>
+        <div class="float-card float-left">
+          <figure>
+            <img src="img/look3.jpg" alt="Black blazer with white slip skirt, black flats, pearl headband">
+            <figcaption>Parisian Off-Duty — Navy blazer, ivory skirt, loafers</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- Style Guide — ordered + unordered lists -->
+    <section class="section style-guide">
+      <h2>How to Build a Look</h2>
+
+      <div class="two-col clearfix">
+        <div class="col-left">
+          <h3>The Formula</h3>
+          <!-- Ordered list -->
+          <ol class="styled-list">
+            <li>Start with a <strong>base layer</strong> — a simple tee, tank, or slip dress</li>
+            <li>Add a <strong>structure piece</strong> — blazer, coat, or oversized shirt</li>
+            <li>Define the <strong>silhouette</strong> with a belt or tuck</li>
+            <li>Choose <strong>one statement</strong> — bag, shoe, or accessory</li>
+            <li>Edit until nothing is left to remove</li>
+          </ol>
+        </div>
+        <div class="col-right">
+          <h3>Key Pieces This Season</h3>
+          <!-- Unordered list -->
+          <ul class="styled-list">
+            <li>Oversized pinstripe blazer</li>
+            <li>Ivory slip midi dress</li>
+            <li>Wide-leg wool trousers</li>
+            <li>Leather tie belt <em>(the detail that changes everything)</em></li>
+            <li>Structured tote bag</li>
+            <li>Pointed-toe flats or loafers</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Schedule Table (Part A requirement) -->
+    <section class="section schedule-section">
+      <h2>Styling Schedule</h2>
+      <p>Drop-in sessions with our in-house stylists. No appointment needed.</p>
+
+      <table class="schedule-table">
+        <thead>
+          <tr>
+            <th>Session</th>
+            <th>Day</th>
+            <th>Time</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Capsule Wardrobe Consult</td>
+            <td>Monday</td>
+            <td>10:00 – 12:00</td>
+          </tr>
+          <tr>
+            <td>Seasonal Edit</td>
+            <td>Wednesday</td>
+            <td>14:00 – 16:00</td>
+          </tr>
+          <tr>
+            <td>Personal Color Analysis</td>
+            <td>Thursday</td>
+            <td>11:00 – 13:00</td>
+          </tr>
+          <tr>
+            <td>Occasion Styling</td>
+            <td>Saturday</td>
+            <td>10:00 – 15:00</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Blockquote + time elements -->
+    <section class="section quote-section">
+      <article>
+        <blockquote class="editorial-quote">
+          "Style is a way to say who you are without having to speak."
+          <cite>— Rachel Zoe</cite>
+        </blockquote>
+        <p>Our next editorial drops on <time datetime="2026-05-01">May 1st, 2026</time>. Subscribe to be the first to see it.</p>
+      </article>
+    </section>
+
+  </main>
+
+  <!-- footer element + address element -->
+  <footer class="site-footer">
+    <div class="footer-inner clearfix">
+      <div class="footer-col">
+        <p class="footer-logo">FIBR</p>
+        <p>Minimal fashion. Maximum intention.</p>
+      </div>
+      <div class="footer-col">
+        <address>
+          42 Rue du Style, Paris<br>
+          <a href="mailto:hello@fibr.co">hello@fibr.co</a>
+        </address>
+      </div>
+      <div class="footer-col">
+        <ul class="footer-nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="collection.html">Collection</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="footer-copy">© 2025 FIBR. All rights reserved. — <a href="https://www.vogue.com" target="_blank" rel="noopener">Inspired by Vogue</a></p>
+  </footer>
+
+</body>
+</html>
